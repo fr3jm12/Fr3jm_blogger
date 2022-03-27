@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>6 Comandos de linux</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<h1>Comandos básicos de Linux</h1>
+		<p>
+			Antes de pasar al resumen de comandos de Linux, primero debes abrir la línea de comandos. Si aún no estás seguro acerca de cómo usar la interfaz de línea de comandos, consulta este tutorial de CLI (en inglés).
+				<br>
+			Aunque los pasos pueden diferir según la distribución que estés utilizando, generalmente puedes encontrar la línea de comando en la sección Utilidades.
+				<br>
+			Aquí hay una lista de comandos básicos de Linux:
+		</p>
+	<h3><li>Comando pwd</li></h3>
+		<p>
+			Usa el comando pwd para encontrar la ruta del directorio (carpeta) de trabajo actual en el que te encuentras. El comando devolverá una ruta absoluta (completa), que es básicamente una ruta de todos los directorios que comienzan con una barra diagonal (/) Un ejemplo de una ruta absoluta es /home/nombredeusuario.
+		</p>
+	<h3><li>Comando cd</li></h3>
+		<p>
+			Para navegar por los archivos y directorios de Linux, usa el comando cd. Te pedirá la ruta completa o el nombre del directorio, dependiendo del directorio de trabajo actual en el que te encuentres.
+				<br>
+			Supongamos que estás en /home/nombredeusuario/Documentos y deseas ir a Fotos, un subdirectorio de Documentos. Para hacerlo, simplemente escribe el siguiente comando: cd Fotos.
+				<br>
+			Otro escenario es si deseas ir a un directorio completamente nuevo, por ejemplo, /home/nombredeusuario/Peliculas. En este caso, debes escribir cd seguido de la ruta absoluta del directorio: cd /home/ nombredeusuario/Peliculas.
+				<br>
+			Hay algunos atajos para ayudarte a navegar rápidamente:
+
+			cd .. (con dos puntos) para ir un directorio hacia arriba
+				<br>
+			cd para ir directamente a la carpeta de inicio
+				<br>
+			cd- (con un guión) para ir al directorio anterior
+				<br>
+			Como nota al margen, el shell de Linux distingue entre mayúsculas y minúsculas. Por lo tanto, debes escribir el nombre del directorio de forma exacta.
+		</p>
+	<h3><li>Comando ls</li></h3>
+		<p>
+			El comando ls se usa para ver el contenido de un directorio. Por defecto, este comando mostrará el contenido de tu directorio de trabajo actual.
+				<br>
+			Si deseas ver el contenido de otros directorios, escribe ls y luego la ruta del directorio. Por ejemplo, ingresa ls/home/nombredeusuario/Documentos para ver el contenido de Documentos.
+				<br>
+			Hay variaciones que puedes usar con el comando ls:
+				<br>
+			ls -R también listará todos los archivos en los subdirectorios
+			ls -a mostrará los archivos ocultos
+			ls -al listará los archivos y directorios con información detallada como los permisos, el tamaño, el propietario, etc.
+		</p>
+	<h3><li>Comando cat</h3></li>
+		<p>
+			cat (abreviatura de concatenate, en inglés) es uno de los comandos más utilizados en Linux. Se utiliza para listar el contenido de un archivo en la salida estándar (sdout). Para ejecutar este comando, escribe cat seguido del nombre del archivo y su extensión. Por ejemplo: cat archivo.txt.
+				<br>
+			Aquí hay otras formas de usar el comando cat:
+				<br>
+			cat > nombredearchivo crea un nuevo archivo.
+			cat nombredearchivo1 nombredearchivo2>nombredearchivo3 une dos archivos (1 y 2) y almacena la salida de ellos en un nuevo archivo (3)
+			convertir un archivo a mayúsculas o minúsculas, cat nombredearchivo | tr a-z A-Z> salida.txt
+		</p>
+	<h3><li>Comando cp</h3></li>
+		<p>
+			Usa el comando cp para copiar archivos del directorio actual a un directorio diferente. 
+				<br>
+			Por ejemplo, el comando cp escenario.jpg /home/nombredeusuario/Imagenes crearía una copia de escenario.jpg 
+			(desde tu directorio actual) en el directorio de Imagenes.
+		</p>
+	<h3><li>Comando mv</h3></li>
+		<p>
+			El uso principal del comando mv es mover archivos, aunque también se puede usar para cambiar el nombre de los archivos.
+				<br>
+			Los argumentos en mv son similares al comando cp. Debes escribir mv, el nombre del archivo y el directorio destino. Por ejemplo: mv archivo.txt /home/nombredeusuario/Documentos.
+				<br>
+			Para cambiar el nombre de los archivos, el comando de Linux es mv nombreviejo.ext nombrenuevo.ext
+		</p>
+</body>
+</html>
